@@ -1,0 +1,79 @@
+*{
+    font-family: "Goudy Old Style";
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+.navbar{
+background-color: #FFFFFF;
+
+
+}
+
+.collapse{
+
+}
+
+.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .0)),  url('../IMG/ab84cfbfd3_50156281_internet-arpanet-naissance.jpg') no-repeat center;
+    height: 25em;
+    background-size: cover;
+    position: relative;
+    color: white;
+    margin-bottom: 0;
+
+}
+
+
+.jumbotron h1{
+    padding-top: 50px;
+}
+
+
+.wii{
+    margin-top: 50px;
+}
+
+.hrwii{
+    color: #1cbea4;
+}
+
+.hwha{
+    margin-top: 50px;
+
+}
+
+
+.voorbeelden{
+    margin-top: 50px;
+}
+
+.modalfilm{
+    margin-top: 50px;
+}
+
+.cities {
+    background: black url("../IMG/Cities.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.farm{
+    background: url("../IMG/Farm.jpg");
+}
+
+.smarthome{
+    background: url("../IMG/SmartToestellenhome.jpg ");
+}
+
+
+
+.footer{
+    background-color: #16181b;
+    color: white;
+}
+
+

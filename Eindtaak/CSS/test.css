@@ -1,0 +1,382 @@
+/*---------- ALGEMEEN ----------*/
+
+* {
+    font-family: papyrus, cursive, Arial, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 300ms;
+}
+
+.container {
+    max-width: 65% !important;
+}
+
+
+/*---------- HEADER + NAVIGATIE ----------*/
+
+.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/intro-photo.jpg') no-repeat center;
+    height: 45em;
+    background-size: cover;
+    position: relative;
+}
+
+.sticky {
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navigatie .nav-link {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #fff !important;
+    padding: 10px;
+}
+
+.navigatie .lijn:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    margin-top: 3px;
+    background: #7d9e3f;
+    transition: all 300ms;
+}
+
+.navigatie .lijn:hover:after {
+    width: 50%;
+}
+
+.sticky .navigatie .nav-link {
+    color: #000 !important;
+}
+
+.navigatie li a:hover,
+.sticky .navigatie li a:hover {
+    color: #7d9e3f !important;
+}
+
+.dropdown {
+    border-left: 1px solid #aaa;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #7d9e3f !important;
+    background-color: #f8f9fa !important;
+}
+
+
+/*---------- JUMBOTRON ----------*/
+
+.jumbotron {
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    margin-top: 8rem;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: #fff;
+}
+
+.scrollDownArrow {
+    border: 1px solid #fff;
+    padding: 15px 45px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.scrollDownArrow:hover {
+    background: #7d9e3f;
+    border-color: #7d9e3f;
+    color: #fff;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+
+/*---------- ABOUT + SLIDER (CAROUSEL) ----------*/
+
+.titles {
+    background: #fff;
+    color: #000;
+    margin: 125px 0;
+}
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 40px;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/*---------- GALLERY ----------*/
+
+.thumbnail {
+    cursor: pointer;
+    position: relative;
+}
+
+
+/*---------- GALLERY PHOTO'S OVERLAY ----------*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(125, 158, 63, .8);
+    transition: all 300ms;
+}
+
+.thumbnail:after {
+    content: "\f00e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: all 300ms;
+}
+
+.thumbnail:hover .overlay,
+.thumbnail:hover:after {
+    opacity: 1;
+}
+
+.img-thumbnail {
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid #fff;
+}
+
+#gallery .container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#gallery .container .load,
+#gallery .noContent .load,
+.formSubmit {
+    background-color: #fff;
+    border: 1px solid #7d9e3f;
+    color: #7d9e3f;
+    letter-spacing: 2px;
+    padding: 15px 45px;
+    border-radius: 30px;
+    transition: all 300ms;
+}
+
+#gallery .container .load:hover,
+.formSubmit:hover {
+    background-color: #7d9e3f;
+    color: #fff;
+    text-decoration: none;
+}
+
+#gallery .noContent .load,
+#gallery .noContent .load:hover {
+    background-color: rgba(125, 158, 63, .5);
+    border: none;
+    color: rgba(0, 0, 0, .6);
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+
+/*---------- CONTACT + FOOTER ----------*/
+
+.card {
+    min-height: 250px;
+    border-bottom: 5px solid #7d9e3f;
+    border-radius: 10px;
+}
+
+.map {
+    margin-bottom: 100px;
+}
+
+.contactHolder {
+    position: relative;
+    background: rgba(0, 0, 0, .9);
+}
+
+.card-header .fas {
+    color: #7d9e3f;
+    font-size: 3rem;
+}
+
+.card-body {
+    font-size: 18px;
+    padding: 50px 0;
+}
+
+.card-body a {
+    color: #000;
+}
+
+.card-body a:hover,
+.fa-envelope,
+.fa-phone {
+    color: #7d9e3f;
+    text-decoration: none;
+}
+
+#lastName,
+#email {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#firstName,
+#exampleFormControlTextarea1 {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.formSubmit {
+    border-radius: 20px;
+}
+
+.valid-feedback.feedback-icon,
+.invalid-feedback.feedback-icon {
+    position: absolute;
+    width: auto;
+    bottom: 7px;
+    right: 20px;
+    margin-top: 0;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    outline: none !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.accordion {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-50%);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.share {
+    position: relative;
+    width: 58px;
+    height: 58px;
+}
+
+.share:hover {
+    width: 70px;
+}
+
+.share .fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+}
+
+.share.facebook {
+    background: #3b5998;
+}
+
+.share.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.share.linkedin {
+    background: #2867B2;
+}
+
+.share.github {
+    background: #211F1F;
+}
+
+.share.youtube {
+    background: #c4302b;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.videoClose {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 52px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 70% !important;
+    }
+    .container.slider,
+    .container.contactForm,
+    .container#loadMore {
+        max-width: 100% !important;
+    }
+    .navigatie .lijn:hover:after {
+        width: 10%;
+    }
+    .accordion {
+        position: relative;
+        top: 0;
+        transform: none;
+        text-align: center;
+    }
+    .share {
+        display: inline-block;
+        margin: 0 -4px -8px 0;
+    }
+    .borderNone {
+        border-radius: 0 !important;
+    }
+    footer {
+        margin-top: 0;
+    }
+}
